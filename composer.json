@@ -1,0 +1,19 @@
+{
+    "name": "robstiles/ediplug",
+    "description": "Package to communicate with EdiMax EdiPlug smart power plugs.",
+    "require": {
+        "nesbot/carbon": "~1.17"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Rob Stiles",
+            "email": "kebian@void7.net"
+        }
+    ],
+    "autoload": {
+      "psr-4": {
+        "RobStiles\\EdiPlug\\": ""
+      }
+    }
+}
