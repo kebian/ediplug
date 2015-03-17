@@ -47,7 +47,7 @@ $plug->power = true;
 		echo "On at $period->on, off at $period->off<br />\n";
 	}
 ```
-### Set Power to Come On on Friday 7pm - 11pm
+### Set Power to Come On Friday 7pm - 11pm
 ```php
 	$plug = new EdiPlug('192.168.1.100', 'admin', '1234');
 
