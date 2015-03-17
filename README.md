@@ -54,7 +54,10 @@ $plug->power = true;
 	$week_schedule = $plug->schedule;
 
 	$friday = $week_schedule[WeekSchedule::FRIDAY];
-	$friday->add(TimePeriod::createFromTimes(Carbon::createFromTime(19,00), Carbon::createFromTime(23,00)));
+	$friday->add(TimePeriod::createFromTimes(
+		Carbon::createFromTime(19,00),
+		Carbon::createFromTime(23,00)
+	));
 	$friday->enabled = true;
 
 	$plug->schedule = $week_schedule;
