@@ -48,7 +48,7 @@ $plug->power = true;
 	}
 ```
 ### Set Power to Come On on Friday 7pm - 11pm
-```
+```php
 	$plug = new EdiPlug('192.168.1.100', 'admin', '1234');
 
 	$week_schedule = $plug->schedule;
