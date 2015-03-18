@@ -10,7 +10,7 @@ A work in progress with basic functionality.
 ### Locating Plugs
 ```php
 // Create the locator
-$locator = new \RobStiles\EdiPlug\Locator();
+$locator = new Locator();
 // Spend 5 seconds looking for plugs
 $plugs = $locator->scan(5);
 foreach($plugs as $plug) {
