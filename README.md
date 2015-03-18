@@ -1,11 +1,27 @@
 # EdiPlug
 A package to communicate with EdiMax EdiPlug smart power plugs.
 
-This package will allow you to check the power status of your plug, turn it off and on as well as retrieve and set new power schedules.  At the moment there is no discovery code to locate the plugs, so you need to already know their IP address.
+This package will allow you to check the power status of your plug, turn it off and on as well as retrieve and set new power schedules.
 
 A work in progress with basic functionality.
 
 ## Example Code
+
+### Locating Plugs
+```php
+// Create the locator
+$locator = new \RobStiles\EdiPlug\Locator();
+// Spend 5 seconds looking for plugs
+$plugs = $locator->scan(5);
+foreach($plugs as $plug) {
+	echo "MAC: $plug->mac\n" ;
+	echo "Manufacturer: $plug->manufacturer\n";
+	echo "Model: $plug->model\n";
+	echo "Version: $plug->version\n";
+	echo "IP Address: $plug->ip_address\n";
+}
+```
+
 ### Turning a Plug On or Off
 
 ```php
